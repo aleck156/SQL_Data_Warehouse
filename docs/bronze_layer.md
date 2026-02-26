@@ -35,3 +35,11 @@
 - Are there any data volume limitations?
 - How to avoid impacting the source system's performance?
 - Authentication & Authorization. tokens, SSH keys, VPN, IP whitelisting, firewalls, IDS/IPS, DNS settings)
+
+---
+### Bronze Rules
+- All names must start with the source system name, and table names must match their original names without renaming
+- **`<sourcesystem>_<entity>`**
+  - `<sourcesystem>`: Name of the source system (e.g. crm, erp).
+  - `<entity>`: Exact table name from the source system.
+  - Example: `crm_customer_info` -> Customer Information from CRM system
