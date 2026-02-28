@@ -17,7 +17,7 @@ CREATE TABLE bronze.crm_cust_info (
 	cst_lastname			NVARCHAR(50),
 	cst_marital_status		NVARCHAR(50),
 	cst_gndr				NVARCHAR(50),
-	cst_create_date			DATETIME
+	cst_create_date			DATE
 );
 
 IF OBJECT_ID('bronze.crm_prd_info', 'U') IS NOT NULL
@@ -74,4 +74,5 @@ CREATE TABLE bronze.erp_PX_CAT_G1V2(
 	SUBCAT				NVARCHAR(50),
 	MAINTENANCE			NVARCHAR(50)
 );
+
 
