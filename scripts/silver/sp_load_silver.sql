@@ -234,16 +234,17 @@ BEGIN
 
 		SET @end_full_time = GETDATE()
 		PRINT '------------------------------------------------------------------------'
-		PRINT '>> Bronze Layer Loading Duration: ' + CAST(DATEDIFF(second, @start_full_time, @end_full_time) AS NVARCHAR) + ' seconds'
+		PRINT '>> Silver Layer Loading Duration: ' + CAST(DATEDIFF(second, @start_full_time, @end_full_time) AS NVARCHAR) + ' seconds'
 		PRINT '------------------------------------------------------------------------'
 
 	END TRY
 	BEGIN CATCH
 		PRINT '------------------------------------------------------------------------'
-		PRINT '| Error occured during loading bronze layer'
+		PRINT '| Error occured during loading silver layer'
 		PRINT '| Error Message: ' + ERROR_MESSAGE()
 		PRINT '| Error Number: ' + CAST(ERROR_NUMBER() AS NVARCHAR)
 		PRINT '| Error State: ' + CAST(ERROR_STATE() AS NVARCHAR)
 		PRINT '------------------------------------------------------------------------'
 	END CATCH
+
 END
