@@ -20,3 +20,11 @@ It is built on:
    - Enrich with demographic and geographic data
  - Columns
 
+
+
+```gold.dim_products```
+
+
+```gold.fact_sales```
+
+
