@@ -7,3 +7,7 @@
 ---
 
 The GOLD layer is the business-level data representation, structured to support analytical and reporting use-cases.
+
+It is built on:
+ - Dimension Tables
+ - Fact Tables
