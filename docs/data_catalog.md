@@ -11,3 +11,12 @@ The GOLD layer is the business-level data representation, structured to support 
 It is built on:
  - Dimension Tables
  - Fact Tables
+
+---
+
+```gold.dim_customers```
+ - Purpose
+   - Store customer details
+   - Enrich with demographic and geographic data
+ - Columns
+
