@@ -36,11 +36,16 @@ It is built on:
 ---
 
 ```gold.dim_products```
-
+ - Purpose
+   - Provides information about products and their attributes.
+ - Columns
 
 ---
 
 ```gold.fact_sales```
+ - Purpose
+   - 
+ - Columns
 
 
 
