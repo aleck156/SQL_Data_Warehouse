@@ -63,15 +63,17 @@ It is built on:
 
 |  Column Name  |  Data Type  |  Description  |
 | --- | --- | --- |
-| order_number | NVARCHAR(50) | desc1 |
-| product_key | BIGINT | desc1 |
-| customer_key | NVARCHAR(50) | desc1 |
-| order_date | NVARCHAR(50) | desc1 |
-| shipping_date | NVARCHAR(50) | desc1 |
-| due_date | NVARCHAR(50) | desc1 |
-| sales_amount | NVARCHAR(50) | desc1 |
-| sales_quantity | NVARCHAR(50) | desc1 |
-| price | NVARCHAR(50) | desc1 |
+| order_number | NVARCHAR(50) | A unique alphanumeric identifier for each sales order, i.e. 'SO54496'. |
+| product_key | BIGINT | A surrogate key linking the order to the product dimension table. |
+| customer_key | NVARCHAR(50) | A surrogate key linking the order to the custoemr dimension table. |
+| order_date | NVARCHAR(50) | The date when the order was placed. |
+| shipping_date | NVARCHAR(50) | The date when the order was shipped to the customer. |
+| due_date | NVARCHAR(50) | The date when the order payment was due. |
+| sales_amount | NVARCHAR(50) | The total monetary value of the sale for the line item, in whole currency units. |
+| sales_quantity | NVARCHAR(50) | The number of units of the product ordered for the line item. |
+| price | NVARCHAR(50) | The price per unit of the product for the line item, in the whole currency units. |
+
+  - sales_amount = sales_quantity x price
 
 
 
