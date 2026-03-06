@@ -22,7 +22,7 @@ It is built on:
 
 |  Column Name  |  Data Type  |  Description  |
 | --- | --- | --- |
-| customer_key | INT | Surrogate key that uniquely identifies each customer records in the dimension table. |
+| customer_key | INT | Surrogate key that uniquely identifies each customer record in the dimension table. |
 | customer_id | INT | Unique numerical identifier assigned to each customer. |
 | customer_number | NVARCHAR(50) | Alphanumeric identifier representing the customer, used for tracking and referencing. |
 | first_name | NVARCHAR(50) | The customer's first name. |
@@ -42,12 +42,12 @@ It is built on:
 
 |  Column Name  |  Data Type  |  Description  |
 | --- | --- | --- |
-| product_key | INT | desc_1 |
-| product_id | INT | desc_1 |
-| product_number | NVARCHAR(50) | desc_1 |
-| product_name | NVARCHAR(50) | desc_1 |
-| category_id | NVARCHAR(50) | desc_1 |
-| category | NVARCHAR(50) | desc_1 |
+| product_key | INT | Surrogate key that uniquely identifies each product record in the dimension table. |
+| product_id | INT | Unique numerical identifier assigned to each product for internal tracking and referencing. |
+| product_number | NVARCHAR(50) | A structured alphanumeric code representing the product, used for categorization or inventory.  |
+| product_name | NVARCHAR(50) | Descriptive name of the product, including key details such as color, type and size. |
+| category_id | NVARCHAR(50) | A unique identifier for the product's category, linking to its high-level classification.  |
+| category | NVARCHAR(50) | The broader classification of the product (e.g. Bike, Components, et c.) to group related items. |
 | subcategory | NVARCHAR(50) | desc_1 |
 | maintenance | NVARCHAR(50) | desc_1 |
 | cost | INT | desc_1 |
