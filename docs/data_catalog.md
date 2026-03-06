@@ -22,6 +22,16 @@ It is built on:
 
 
 
+| Column Name | Data Type | Description |
+| --- | --- |
+| customer_key | INT | desc |
+| customer_id | INT | desc 2 |
+
+
+
+
+
+
 ```gold.dim_products```
 
 
