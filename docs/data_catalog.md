@@ -40,6 +40,20 @@ It is built on:
    - Provides information about products and their attributes.
  - Columns
 
+|  Column Name  |  Data Type  |  Description  |
+| --- | --- | --- |
+| product_key | INT | desc_1 |
+| product_id | INT | desc_1 |
+| product_number | NVARCHAR(50) | desc_1 |
+| product_name | NVARCHAR(50) | desc_1 |
+| category_id | NVARCHAR(50) | desc_1 |
+| category | NVARCHAR(50) | desc_1 |
+| subcategory | NVARCHAR(50) | desc_1 |
+| maintenance | NVARCHAR(50) | desc_1 |
+| cost | INT | desc_1 |
+| product_line | NVARCHAR(50) | desc_1 |
+| start_date | DATE | desc_1 |
+
 ---
 
 ```gold.fact_sales```
