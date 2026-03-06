@@ -34,5 +34,11 @@ It is built on:
 | create_date | DATE | The date and time when the customer record was created in the system. | |
 
 
+```gold.dim_products```
+
+
+
+```gold.fact_sales```
+
 
 
