@@ -48,11 +48,11 @@ It is built on:
 | product_name | NVARCHAR(50) | Descriptive name of the product, including key details such as color, type and size. |
 | category_id | NVARCHAR(50) | A unique identifier for the product's category, linking to its high-level classification.  |
 | category | NVARCHAR(50) | The broader classification of the product (e.g. Bike, Components, et c.) to group related items. |
-| subcategory | NVARCHAR(50) | desc_1 |
-| maintenance | NVARCHAR(50) | desc_1 |
-| cost | INT | desc_1 |
-| product_line | NVARCHAR(50) | desc_1 |
-| start_date | DATE | desc_1 |
+| subcategory | NVARCHAR(50) | A more detailed classification of the productwithin the category, such as product type. |
+| maintenance | NVARCHAR(50) | Indicates whether the product requires regular maintenance. Allowed values: 'Yes', 'No'. |
+| cost | INT | The cost or base price of the product. Measured in monetary unit. |
+| product_line | NVARCHAR(50) | The specific product line or series to which the product belongs. |
+| start_date | DATE | The date when the product became available for sale or use. |
 
 ---
 
