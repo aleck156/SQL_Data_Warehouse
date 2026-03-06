@@ -20,21 +20,21 @@ It is built on:
    - Enrich with demographic and geographic data
  - Columns
 
+---
+
+|  Column Name  |  Data Type  |  Description  |
+| --- | --- | --- |
+| customer_key | INT | Surrogate key that uniquely identifies each customer records in the dimension table. |
+| customer_id | INT | Unique numerical identifier assigned to each customer. |
+| customer_number | NVARCHAR(50) | desc 2 |
+| first_name | NVARCHAR(50) | desc 2 |
+| last_name | NVARCHAR(50) | desc 2 |
+| country | NVARCHAR(50) | desc 2 |
+| marital_status | NVARCHAR(50) | desc 2 |
+| gender | NVARCHAR(50) | desc 2 |
+| birthdate | DATE | desc 2 |
+| create_date | DATE | desc 2 |
 
 
-| Column Name | Data Type | Description |
-| --- | --- |
-| customer_key | INT | desc |
-| customer_id | INT | desc 2 |
-
-
-
-
-
-
-```gold.dim_products```
-
-
-```gold.fact_sales```
 
 
