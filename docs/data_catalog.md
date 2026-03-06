@@ -58,8 +58,24 @@ It is built on:
 
 ```gold.fact_sales```
  - Purpose
-   - 
+   - Stores transactional sales data for analytical purposes.
  - Columns
+
+|  Column Name  |  Data Type  |  Description  |
+| --- | --- | --- |
+| order_number | NVARCHAR(50) | desc1 |
+| product_key | BIGINT | desc1 |
+| customer_key | NVARCHAR(50) | desc1 |
+| order_date | NVARCHAR(50) | desc1 |
+| shipping_date | NVARCHAR(50) | desc1 |
+| due_date | NVARCHAR(50) | desc1 |
+| sales_amount | NVARCHAR(50) | desc1 |
+| sales_quantity | NVARCHAR(50) | desc1 |
+| price | NVARCHAR(50) | desc1 |
+
+
+
+
 
 
 
