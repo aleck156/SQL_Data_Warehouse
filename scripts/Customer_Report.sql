@@ -20,6 +20,10 @@ Highlights:
 		- Recency (months since last order)
 		- Average order value
 		- Average monthly spending
+Usage:
+	1) Execute the script to create new View gold.report_customers
+	2) Use the following query to retrieve information
+		SELECT * FROM gold.report_customers 
 -- ####################################################
 */
 USE [DataWarehouseAnalytics];
