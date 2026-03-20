@@ -29,6 +29,10 @@ Usage:
 USE [DataWarehouseAnalytics];
 GO
 
+-- ####################################################
+-- Create Report: gold.report_customers
+-- ####################################################
+
 IF EXISTS (
 	SELECT 1 FROM sys.views
 	WHERE name = 'report_customers'
@@ -82,6 +86,9 @@ WITH base_customer_data AS
 		, customer_age
 	--ORDER BY customer_number
 )
+-- ####################################################
+-- 3) Main query: Combine all customer results into one output
+-- ####################################################
 SELECT
 	customer_key
 	, customer_number
@@ -106,11 +113,13 @@ SELECT
 	, last_order_date
 	, customer_lifespan
 	, DATEDIFF(month, last_order_date, GETDATE()) AS KPI_recency
-	, CASE
+
+	, CASE -- Average Order Value (AOV)
 		WHEN total_orders IS NULL OR total_orders = 0 THEN -1
 		ELSE total_sales / total_orders
-	END AS KPI_avg_order_value		
-	, CASE
+	END AS KPI_avg_order_value
+
+	, CASE -- Average Monthly Spend (AMS)
 		WHEN customer_lifespan IS NULL OR customer_lifespan = 0 THEN total_sales
 		ELSE total_sales / customer_lifespan
 	END AS KPI_avg_monthly_spend	

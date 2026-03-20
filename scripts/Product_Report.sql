@@ -24,11 +24,15 @@ Highlights:
 Usage:
 	1) Execute the script to create new View gold.report_customers
 	2) Use the following query to retrieve information
-		SELECT * FROM gold.report_customers 
+		SELECT * FROM gold.report_products 
 -- ####################################################
 */
 USE [DataWarehouseAnalytics];
 GO
+
+-- ####################################################
+-- Create Report: gold.report_products
+-- ####################################################
 
 IF EXISTS
 (
@@ -90,7 +94,7 @@ product_aggregation AS
 		, cost
 )
 -- ####################################################
--- 3) Main query: Combine all product rsults into one output
+-- 3) Main query: Combine all product results into one output
 -- ####################################################
 SELECT
 	product_key
@@ -117,7 +121,7 @@ SELECT
 		ELSE total_sales / total_orders
 	END AS avg_order_revenue
 
-	, CASE -- Average Monthly Revenue
+	, CASE -- Average Monthly Revenue (AMR)
 		WHEN lifespan = 0 THEN total_sales
 		ELSE total_sales / lifespan
 	END AS avg_monthly_revenue
