@@ -30,9 +30,9 @@ USE [DataWarehouseAnalytics];
 GO
 
 IF EXISTS (
-	SELECT * FROM sys.views
+	SELECT 1 FROM sys.views
 	WHERE name = 'report_customers'
-		AND type='v'
+		AND type='V'
 )
 	DROP VIEW gold.report_customers;
 GO
@@ -75,7 +75,8 @@ WITH base_customer_data AS
 		, MAX(order_date) AS last_order_date
 		, DATEDIFF(MONTH, MIN(order_date), MAX(order_date)) AS customer_lifespan
 	FROM base_customer_data
-	GROUP BY customer_key
+	GROUP BY 
+		customer_key
 		, customer_number
 		, customer_name
 		, customer_age
